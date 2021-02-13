@@ -43,15 +43,36 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    <!-- CSS 작명 규칙 (BEM: Block Element Modifier) -->
+    <!-- 
+        - : 단어와 단어 사이에는 하이픈 (예: head-container-blue)
+         __ : ~의 하위 요소 (예: head-container__head-brand)
+         -- : ~의 상태를 나타낼 때 (예: head-container__head-brand--nolink)
+    -->
     <header>
         <div class="inner">
             <div class="head-container">
-                <div class="head-brand">잔재미코딩</div>
-                <div class="head-blog">잔재미코딩 블로그 모음</div>
+                <div class="head-brand"><a href="https://www.fun-coding.org">잔재미코딩</a></div>
+                <div class="head-blog"><a href="https://www.fun-coding.org/daveblog.html">잔재미코딩 블로그 모음</a></div>
             </div>
         </div>
     </header>
-    <section></section>
+    <!-- 메인 이미지 섹션 -->
+    <section class="main">
+        <div class="main-container">
+            <div class="inner">
+                <div class="title-container">
+                    <div class="title">광고보다 강의에 집중합니다</div>
+                    <div class="message">
+                        전자책보다 좋은 자료와 현업의 경험을 함께<br />
+                        검증된 온라인 강의를<br />
+                        검증된 온라인 플랫폼에서 제공합니다.<br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer></footer>
     <!-- <script src="js/main.js"></script> -->
 </body>
