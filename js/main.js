@@ -64,15 +64,15 @@ const transformPrev = (event) => {
 };
 
 /*
- * 각각의 카드 리스트 접근
+ * 각각의 왼쪽 버튼 접근
  */
 for(let i = 0; i < slidePrevList.length; i++) {
     let classList = slidePrevList[i].parentElement.parentElement.nextElementSibling; // 카드 리스트 가져오기
-    let liList = classList.getElementsByTagName("li"); // 카드 리스트의 카드 가져오기
+    let liList = classList.getElementsByTagName("li"); // 카드 리스트의 카드들 가져오기
 
     /*
      * 보이는 카드 리스트의 너비보다 카드들의 길이가 길면 왼쪽 버튼 활성화
-     * 보이는 =카드 리스트의 너비보다 카드들의 길이가 길지 않으면 왼쪽, 오른쪽 버튼 삭제
+     * 보이는 카드 리스트의 너비보다 카드들의 길이가 길지 않으면 왼쪽, 오른쪽 버튼 삭제
      */
     if(classList.clientWidth < (liList.length * 260)) {
         slidePrevList[i].classList.add("slide-prev-hover");
